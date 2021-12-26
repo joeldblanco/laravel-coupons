@@ -160,7 +160,7 @@ $customer = Customer::find(1);
 
 // Redeem using the code
 // Returns the Coupon model
-$coupon = $customer->redeem('ABCD-EFGH');
+$coupon = $customer->redeemCode('ABCD-EFGH');
 ```
 
 If the code is valid it will return the Coupon model.
